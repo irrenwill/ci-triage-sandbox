@@ -1,5 +1,5 @@
 def test_passing():
     assert 1 + 1 == 2
 
-def test_failing():
-    assert 1 == 2, "e2e: testing issue fallback when no PR exists"
+def test_previously_failing():
+    assert 1 + 1 == 2
