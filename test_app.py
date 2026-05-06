@@ -2,4 +2,5 @@ def test_passing():
     assert 1 + 1 == 2
 
 def test_failing():
-    assert 1 == 2, "This should fail"
+    result = {"status": 500, "error": "connection refused", "host": "db.internal:5432"}
+    assert result["status"] == 200, f"API health check failed: {result}"
